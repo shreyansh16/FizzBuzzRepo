@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class FizzBuzz {
   
@@ -24,8 +25,11 @@ public class FizzBuzz {
 	public static void main(String[] args)
 	{   
 		
-		//here the number inside the bracket specifies the number upto which we want to check basically the range from 1-n
-		//example in this case n=100
-	   	Test(100);
+		//user friendly input taken 
+	   	int n;
+	   	Scanner sc = new Scanner(System.in);
+	   	
+	   	n=sc.nextInt();
+	   	Test(n);
 	}
 }
